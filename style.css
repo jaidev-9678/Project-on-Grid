@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.left-section{grid-area: left-section;}
+.right-section{grid-area: right-section;}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+@media screen and (max-width: 1000px) {
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    
+}
+@media screen and (min-width: 375px) and (max-width: 780px){
+     .left-section{
+        grid-column: span 3;
+     }
+     .right-section{
+        grid-column: span 4;
+     }  
+}
+@media  screen and (max-width: 1000px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.main-content{
+    display: grid;
+    min-height: 1000px;
+    width: 90%;
+    margin: 10px auto;
+    background-color: gray;
+    grid-template-columns: 300px 700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* grid-template-areas: 'left-section left-section' 'left-section'
+    'right-section' 'right-section' 'right-section'; */
+}
+
+.left-section{
+    grid-column: span 1;
+    width: 300px;
+    margin-bottom: 1000px;
+    height: 100%;
+    background-color: rgb(25, 25, 83);
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: rgb(247, 249, 253);  
+}
+.left-content{
+      padding: 1rem;
+}
+.profile .box-img{
+    width: 175;
+    height: 120px;
+   margin: auto;
+    border-radius: 30%;
+    border: 5px white solid;
+    display: block;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.designation{
+    font-size: 1rem; 
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    padding: 1rem;
+}
+hr{
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 247px;
+    margin-left: 10px;  
+}
+ .info{
+     text-align: center;
+     width: 261px;
+     margin-top: 20px;
+}
+.social-media{
+    display: inline-flex;
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+.icons{
+    font-size:24px
+}
+
+.fa-linkedin-square{
+    margin-left: 53px;
+    font-size: 21px;
+}
+.fa-github-square{
+    margin-left: 62px;
+    font-size: 21px;
+}
+.personal-details{
+    font-size: 21px;
+}
+.fa-phone-square{
+    margin-bottom: 20px;
+    margin: 6px
+}
+.fa-map-marker{
+    margin: 6px;
+}
+.skills{
+    font-size: 00.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right:0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    background-color: white;
+}
+
+#progress-bar1{
+    margin-bottom: 16px;
+}
+#progress-bar2{
+    margin-bottom: 16px;
+    width: 90%;
+}
+#progress-bar3{
+    margin-bottom: 16px;
+    width: 80%;
+}
+#progress-bar4{
+    margin-bottom: 16px;
+    width: 70%;
+}
+#progress-bar5{
+    margin-bottom: 16px;
+    width: 60%;
+}
+#progress-bar6{
+    margin-bottom: 16px;
+    width: 50%;
+}
+#progress-bar7{
+    margin-bottom: 16px;
+    width: 40%;
+}
+#progress-bar8{
+    margin-bottom: 16px;
+    width: 30%;
+}
+.right-section .right-main-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2 rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
